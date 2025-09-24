@@ -20,4 +20,6 @@ Route::get('/nim/{param1?}', function ($param1 = '') {
 Route::get('/about', function () {
     return view('halaman-about');
 });
+use App\Http\Controllers\HomeController;
+
 Route::get('/home',[HomeController::class,'index'] );
